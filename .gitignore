@@ -1,0 +1,17 @@
+# Ignore images
+*.png
+
+
+# Ignore compiled
+*.pyc
+__pycache__/
+
+# Ignore local folders
+dump/
+icanfixher/
+noice/
+poggers/
+yeet/
+yikes/
+mid/
+AA-PREP/
