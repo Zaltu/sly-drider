@@ -38,14 +38,16 @@ function Slideshow(){
     getNewImage(setImgUrl, setImgName)
   }, [])
   return (
-    <div>
+    <div style={{height: '100vh', width: '100vw'}}>
       <div className="slideshow-container">
         {/* <!-- Full-height images with number and caption text --> */}
-        <div className="mySlides">
-        <img src={imgurl} style={{height:"100vh"}}></img>
+        <div className="mySlides" style={{flexGrow: 1}}>
+          <img src={imgurl} style={
+            {width: "100%", maxWidth: "none", maxHeight: "100vh", height:"auto", objectFit: "contain"}
+          }></img>
         </div>
         {/* <!-- Judgement buttons --> */}
-        <div style={{display:"flex", flexDirection:"column", justifyContent:"center", position:"absolute", right:0, height:"100vh"}}>
+        <div style={{display:"flex", flexDirection:"column", justifyContent:"center", position:"absolute", right:0, height:"100vh", backgroundColor: 'transparent'}}>
           <a className="icon" style={{color:"white"}} onClick={()=>passJudgement("poggers", imgname, setImgUrl, setImgName)}>👌</a>
           <a className="icon" style={{color:"white"}} onClick={()=>passJudgement("noice", imgname, setImgUrl, setImgName)}>👍</a>
           <a className="icon" style={{color:"white"}} onClick={()=>passJudgement("icanfixher", imgname, setImgUrl, setImgName)}>🧛</a>

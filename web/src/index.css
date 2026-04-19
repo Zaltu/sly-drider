@@ -11,8 +11,10 @@
 
 /* Slideshow container */
 .slideshow-container {
-  max-height: 100vh;
+  height: 100%;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -26,6 +28,7 @@
   transition: 0.1s ease;
   border-radius: 3px 3px 3px 3px;
   user-select: none;
+  background-color: transparent;
 }
 /* On hover, add a black background color with a little bit see-through */
 .icon:hover {
